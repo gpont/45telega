@@ -39,8 +39,9 @@ setup(
     description="Production-ready Telegram MCP Server with 45+ methods",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/45telega",
-    packages=find_packages(exclude=["tests", "tests.*", "docs", "scripts"]),
+    url="https://github.com/sergekostenchuk/45telega",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -63,13 +64,13 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "45telega=telega45.cli:main",
-            "telega-mcp=telega45.cli:main",
+            "45telega=mcp_telegram:app",
+            "telega-mcp=mcp_telegram:app",
         ],
     },
     include_package_data=True,
     package_data={
-        "telega45": [
+        "mcp_telegram": [
             "config/*.yaml",
             "config/*.json",
             "templates/*.j2",
@@ -86,8 +87,8 @@ setup(
         "api",
     ],
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/45telega/issues",
-        "Source": "https://github.com/yourusername/45telega",
-        "Documentation": "https://github.com/yourusername/45telega/wiki",
+        "Bug Reports": "https://github.com/sergekostenchuk/45telega/issues",
+        "Source": "https://github.com/sergekostenchuk/45telega",
+        "Documentation": "https://github.com/sergekostenchuk/45telega/wiki",
     },
 )

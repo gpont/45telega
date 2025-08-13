@@ -35,7 +35,7 @@ setup(
     name="45telega",
     version="1.0.0",
     author="Sergey Kostenchuk",
-    author_email="9616166@gmail.com",
+    author_email="support@45telega.io",
     description="Production-ready Telegram MCP Server with 45+ methods",
     long_description=long_description,
     long_description_content_type="text/markdown",

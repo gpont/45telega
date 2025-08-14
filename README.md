@@ -17,10 +17,19 @@ A powerful Model Context Protocol (MCP) server for Telegram with 45+ methods, pr
 
 ## 🚀 Quick Start
 
+### Platform-Specific Setup
+
+#### 🪟 Windows + WSL + Kiro IDE
+**[📖 Complete Windows Setup Guide →](WINDOWS_WSL_SETUP.md)**
+
+Comprehensive step-by-step guide for Windows users with WSL and Kiro IDE integration.
+
+#### 🐧 Linux/macOS
+
 ### One-Line Install
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/yourusername/45telega/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/sergekostenchuk/45telega/main/install.sh | bash
 ```
 
 ### PyPI Install
@@ -46,7 +55,7 @@ docker run -d \
 - Python 3.9+ or Docker
 - Telegram API credentials from [my.telegram.org](https://my.telegram.org/apps)
 - 512MB RAM minimum
-- Linux/macOS/Windows
+- Linux/macOS/Windows (with WSL)
 
 ## 🔧 Configuration
 
@@ -115,6 +124,10 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
   }
 }
 ```
+
+### Add to Kiro IDE (Windows + WSL)
+
+See the [Windows Setup Guide](WINDOWS_WSL_SETUP.md) for detailed Kiro IDE integration instructions.
 
 ## 📚 Available Methods
 
@@ -225,7 +238,7 @@ pip install -e . --upgrade
 ### Setup Development Environment
 
 ```bash
-git clone https://github.com/yourusername/45telega
+git clone https://github.com/sergekostenchuk/45telega
 cd 45telega
 pip install -e .[dev]
 ```
@@ -259,8 +272,8 @@ MIT License - see [LICENSE](LICENSE) file.
 
 ## 💬 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/45telega/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/45telega/discussions)
+- **Issues**: [GitHub Issues](https://github.com/sergekostenchuk/45telega/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/sergekostenchuk/45telega/discussions)
 - **Email**: 9616166@gmail.com
 
 ## 🙏 Acknowledgments

@@ -112,7 +112,7 @@ download_and_install() {
     # Install Python package
     print_info "Installing Python package..."
     cd "$INSTALL_DIR"
-    python3 -m pip install --user -e . --upgrade
+    python3 -m pip install -e . --upgrade
     print_success "Python package installed"
     
     # Create executable link
